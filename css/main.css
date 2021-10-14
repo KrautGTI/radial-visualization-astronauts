@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+html {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  background-color: #F1FAEE;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #122035;
+  fill: #122035;
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+h1 {
+  margin: 60px 0 5px;
+  font-size: 45px;
+}
+h2 {
+  margin: 60px 0 20px;
+  font-size: 26px;
+}
+h3 {
+  margin: 30px 0 0;
+  font-size: 18px;
+}
+a {
+  color: #457B9D;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
+.viz-content {
+  position: relative;
+}
+
+/* Infobox close button */
+#astronauts-list .close {
+  position: absolute;
+  top: -20px;
+  left: 180px;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  background-image: url('../assets/close.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Legend */
+.legend-section.cohort,
+.legend-section.stats {
+  height: 130px;
+  background-image: url('../assets/legend-cohorts.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 center;
+}
+.legend-section.cohort {
+  background-image: url('../assets/legend-cohorts.svg');
+}
+.legend-section.stats {
+  background-image: url('../assets/legend-stats.svg');
+}
+
+.legend-section ul {
+  margin-top: 0;
+  padding-left: 5px;
+  list-style: none;
+}
+.legend-section li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.legend-section.background li {
+  position: relative;
+  padding: 5px 0 5px 70px;
+}
+.legend-section.background li::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 60px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+.legend-section.background li.civil::before {
+  background-image: url('../assets/legend-civilian.svg');
+}
+.legend-section.background li.military::before {
+  background-image: url('../assets/legend-military.svg');
+}
+.legend-section.disaster li {
+  position: relative;
+  padding-left: 27px;
+}
+.legend-section.disaster li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  background-size: 20px auto;
+  opacity: 0.6;
+}
+.legend-section.disaster li.apollo::before {
+  background-image: url('../assets/star_yellow.svg');
+}
+.legend-section.disaster li.challenger::before {
+  background-image: url('../assets/star_green.svg');
+}
+.legend-section.disaster li.columbia::before {
+  background-image: url('../assets/star_red.svg');
+}
+
+/* Instructions */
+.instructions {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 10px 25px 10px 50px;
+  font-weight: 700;
+  background-color: #BBD2D5;
+  background-image: url('../assets/lamp.svg');
+  background-repeat: no-repeat;
+  background-size: auto 30px;
+  background-position: 14px 18px;
+  border-radius: 3px;
+}
+
+/* Sources */
+.sources {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}

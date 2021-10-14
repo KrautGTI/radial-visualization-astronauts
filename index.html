@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interactive Data Visualization with D3.js - Radial Visualization</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<h1>The Cohorts of NASA Astronauts</h1>
+		<div class="intro">
+			<p>As NASA will reveal a new cohort of astronauts in 2022, this visualization looks at the previous groups and the astronauts composing them.</p>
+		</div>
+
+		<div class="legend hidden">
+			<h2>How to read this visualization</h2>
+			<div class="row">
+				<div class="col-3">
+					<div class="legend-section cohort"></div>
+				</div>
+				<div class="col-3">
+					<div class="legend-section stats"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<div class="legend-section background">
+						<h3>Professional background</h3>
+						<ul>
+							<li class="background civil">Civilian</li>
+							<li class="background military">Military</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="legend-section flight-time">
+						<h3>Total time in space</h3>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="legend-section time-in-spacewalk">
+						<h3>Total time in space walk</h3>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="legend-section disaster">
+						<h3>Died in service</h3>
+						<ul>
+							<li class="disaster apollo">Apollo 1 (1967)</li>
+							<li class="disaster challenger">Challenger (1986)</li>
+							<li class="disaster columbia">Columbia (2003)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="instructions hidden">
+			<p>Click on a cohort to discover the astronauts it contains</p>
+		</div>
+
+		<div class="viz-content">
+			<div id="viz"></div>
+			<div id="astronauts-list">
+				<button class="close"></button>
+			</div>
+			<div class="legend"></div>
+		</div>
+
+		<div class="sources">
+			<div class="sources-label">Sources: <a href="https://www.nasa.gov/">nasa.gov</a>, <a href="https://en.wikipedia.org/wiki/NASA_Astronaut_Corps#Selection_groups">wikipedia: NASA Astronauts Groups</a>, <a href="https://data.world/annemariedufour/nasa-astronauts">data.world</a></div>
+			<div class="icons">Lightbulb icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepick" target="_blank" rel="noreferrer">Freepick</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" target="_blank" rel="noreferrer">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank" rel="noreferrer">www.flaticon.com</a></div>
+		</div>
+	</div>
+	
+
+	<!-- Add Scripts Here -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="js/helper.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
