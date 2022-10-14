@@ -5,7 +5,7 @@ const innerCircleRadius = 300; // Inner radius of the visualization (where the g
 const outerCircleRadius = 450; // Outer radius of the visualization (including the flight time lines)
 
 // Load the data
-d3.csv('/data/astronauts_nasa_1959-2017.csv', d3.autoType).then(data => {
+d3.csv('./data/astronauts_nasa_1959-2017.csv', d3.autoType).then(data => {
   // We want to get astronauts by their group, year and group_name
   // first create a set of unique combos of group, year and group_names
   var uniqueVals = new Set()
